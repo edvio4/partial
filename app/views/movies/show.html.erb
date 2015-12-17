@@ -1,0 +1,17 @@
+<div class="row">
+
+  <%= render "side_nav" %>
+
+  <div class="medium-10 columns">
+    <%= render "movie_details" %>
+
+    <div>
+      <%= button_to "Rent!", movie_rentals_path(@movie), class: :button %>
+    </div>
+
+    <div>
+      <%= link_to "Back", movies_path, class: :button %>
+    </div>
+
+  </div>
+</div>
